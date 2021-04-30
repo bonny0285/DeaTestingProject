@@ -22,6 +22,7 @@ class AddOnCardView: UIView {
     @IBOutlet weak var separator: UIView!
     @IBOutlet weak var bottomHintLabel: UILabel!
     @IBOutlet weak var discoverButton: UIButton!
+    @IBOutlet weak var bottomHeight: NSLayoutConstraint!
     
     // TOP CARD VIEW
     @IBOutlet weak var topCardView: AddOnTopCardView!
@@ -35,25 +36,26 @@ class AddOnCardView: UIView {
     
     var viewModel = ViewModel() {
         didSet {
-            topCardViewHeight.constant = viewModel.topCardView?.style.height ?? 0
+            topCardViewHeight.constant = viewModel.topCardView.style.height
+            //bottomHeight.constant = viewModel.bottomTitle != nil ? 5 : 3
 
             titleLabel.text = viewModel.title
             subTitleLabel.text = viewModel.subTitle
-            
+
             if let bottomLabelText = viewModel.bottomTitle {
                 bottomHintLabel.isHidden = false
                 bottomHintLabel.text = bottomLabelText
             } else {
                 bottomHintLabel.isHidden = true
             }
-            
-            topCardView.viewModel = viewModel.topCardView!
-            middleCardView.viewModel = viewModel.middleCardView!
-            
+
+            topCardView.viewModel = viewModel.topCardView
+            middleCardView.viewModel = viewModel.middleCardView
+
             if let _ = imageContainer {
                 imageContainer?.removeFromSuperview()
             }
-            
+
             if viewModel.withPromo == true {
                 let promoImage = UIImage(named: "ribbon")
                 imageContainer = UIImageView(image: promoImage)
@@ -71,13 +73,18 @@ class AddOnCardView: UIView {
     
     //MARK: - Lifecycle
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        commonInit()
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        commonInit()
+//    }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         commonInit()
     }
     
@@ -127,7 +134,7 @@ extension AddOnCardView {
         var subTitle: String?
         var bottomTitle: String?
         var withPromo: Bool?
-        var topCardView: AddOnTopCardView.ViewModel?
-        var middleCardView: AddOnMiddleCardView.ViewModel?
+        var topCardView: AddOnTopCardView.ViewModel = AddOnTopCardView.ViewModel()
+        var middleCardView: AddOnMiddleCardView.ViewModel = AddOnMiddleCardView.ViewModel()
     }
 }

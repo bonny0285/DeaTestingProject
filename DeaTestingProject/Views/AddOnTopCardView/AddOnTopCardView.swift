@@ -11,33 +11,36 @@ class AddOnTopCardView: UIView {
     
     //MARK: - Properties
     
-    var containerView = UIView()
-    private var style: AddOnTopViewStyle = .none
+    private var containerView = UIView()
+
     var viewModel = ViewModel() {
         didSet {
-            style = viewModel.style
-            setupUIByStyle(style)
+            setupUIByStyle(viewModel.style)
         }
     }
     
     //MARK: - Lifecycle
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        commonInit()
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        commonInit()
+//    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         commonInit()
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
-    }
+ 
     
     //MARK: - Methods
 
     private func commonInit() {
-//        let nib = UINib(nibName: "AddOnTopCardView", bundle: Bundle.main)
-//        nib.instantiate(withOwner: self, options: nil)
-        
         addSubview(containerView)
     }
     

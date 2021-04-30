@@ -45,31 +45,47 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Mh-C3S" userLabel="ContainerView">
                             <rect key="frame" x="0.0" y="0.0" width="556" height="327"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-xl-VwU" userLabel="TopView" customClass="AddOnTopCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="60" width="556" height="60"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-Md-X0u">
+                                    <rect key="frame" x="0.0" y="60" width="556" height="132"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-xl-VwU" userLabel="TopView" customClass="AddOnTopCardView" customModule="DeaTestingProject" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="QXJ-s5-idT"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-Rk-NRX" customClass="AddOnMiddleCardView" customModule="DeaTestingProject" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="60" width="556" height="72"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="72" id="gvi-3Z-Sv4"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="QXJ-s5-idT"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-Rk-NRX" customClass="AddOnMiddleCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="120" width="556" height="72"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="72" id="gvi-3Z-Sv4"/>
+                                        <constraint firstItem="rOu-Rk-NRX" firstAttribute="leading" secondItem="Nbq-Md-X0u" secondAttribute="leading" id="3E6-Z2-J5p"/>
+                                        <constraint firstItem="rOu-Rk-NRX" firstAttribute="top" secondItem="Z4u-xl-VwU" secondAttribute="bottom" id="3fz-li-41R"/>
+                                        <constraint firstItem="Z4u-xl-VwU" firstAttribute="leading" secondItem="Nbq-Md-X0u" secondAttribute="leading" id="aMJ-qz-MCD"/>
+                                        <constraint firstAttribute="trailing" secondItem="rOu-Rk-NRX" secondAttribute="trailing" id="fct-Hf-OwB"/>
+                                        <constraint firstItem="Z4u-xl-VwU" firstAttribute="top" secondItem="Nbq-Md-X0u" secondAttribute="top" id="kx7-RK-xXG"/>
+                                        <constraint firstAttribute="bottom" secondItem="rOu-Rk-NRX" secondAttribute="bottom" id="ssD-qZ-xm6"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z4u-xl-VwU" secondAttribute="trailing" id="ure-Gf-HK5"/>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="132" id="vtg-fr-28c"/>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-W8-kOt">
-                                    <rect key="frame" x="20" y="235.5" width="516" height="75.5"/>
+                                    <rect key="frame" x="20" y="237" width="516" height="74"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sconto valido per i 3 rinnovi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-1x-1vK">
-                                            <rect key="frame" x="171.5" y="0.0" width="173" height="19.5"/>
+                                            <rect key="frame" x="171.5" y="0.0" width="173" height="18"/>
                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                             <color key="textColor" name="DeaRed"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-vd-2Ev">
-                                            <rect key="frame" x="0.0" y="27.5" width="516" height="48"/>
+                                            <rect key="frame" x="0.0" y="26" width="516" height="48"/>
                                             <color key="backgroundColor" red="0.0" green="0.38431372549999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="mXQ-Kv-JuS"/>
@@ -86,6 +102,7 @@
                                     <constraints>
                                         <constraint firstItem="KsW-vd-2Ev" firstAttribute="leading" secondItem="SuQ-W8-kOt" secondAttribute="leading" id="3cR-bb-Czj"/>
                                         <constraint firstAttribute="trailing" secondItem="KsW-vd-2Ev" secondAttribute="trailing" id="4ql-0w-BIY"/>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="74" id="5Tx-2x-Vna"/>
                                     </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQE-9v-AYX">
@@ -126,19 +143,16 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="SuQ-W8-kOt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rOu-Rk-NRX" secondAttribute="bottom" constant="5" id="0LC-D1-6wO"/>
                                 <constraint firstItem="dQE-9v-AYX" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="0qu-dY-gD6"/>
                                 <constraint firstAttribute="trailing" secondItem="SuQ-W8-kOt" secondAttribute="trailing" constant="20" id="3Wp-FK-6yq"/>
-                                <constraint firstItem="Z4u-xl-VwU" firstAttribute="top" secondItem="dQE-9v-AYX" secondAttribute="bottom" id="4ve-Yo-MW0"/>
-                                <constraint firstItem="rOu-Rk-NRX" firstAttribute="top" secondItem="Z4u-xl-VwU" secondAttribute="bottom" id="7zb-oh-NsB"/>
-                                <constraint firstItem="Z4u-xl-VwU" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="9G5-iV-nOP"/>
-                                <constraint firstAttribute="trailing" secondItem="Z4u-xl-VwU" secondAttribute="trailing" id="Aph-PH-Otd"/>
-                                <constraint firstItem="rOu-Rk-NRX" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="Cqr-8b-QW4"/>
+                                <constraint firstItem="SuQ-W8-kOt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Nbq-Md-X0u" secondAttribute="bottom" constant="5" id="Bhe-Xs-Yyg"/>
                                 <constraint firstItem="dQE-9v-AYX" firstAttribute="top" secondItem="bRe-Mh-C3S" secondAttribute="top" id="D7z-tD-Rjq"/>
                                 <constraint firstAttribute="trailing" secondItem="dQE-9v-AYX" secondAttribute="trailing" id="Gge-Ww-cT9"/>
-                                <constraint firstAttribute="trailing" secondItem="rOu-Rk-NRX" secondAttribute="trailing" id="U9n-BK-2gI"/>
+                                <constraint firstItem="Nbq-Md-X0u" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="Muo-SH-tTB"/>
                                 <constraint firstAttribute="bottom" secondItem="SuQ-W8-kOt" secondAttribute="bottom" constant="16" id="aa3-Te-IJi"/>
                                 <constraint firstItem="SuQ-W8-kOt" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" constant="20" id="dwB-1e-FjE"/>
+                                <constraint firstItem="Nbq-Md-X0u" firstAttribute="top" secondItem="dQE-9v-AYX" secondAttribute="bottom" id="t2j-Xq-Tdm"/>
+                                <constraint firstAttribute="trailing" secondItem="Nbq-Md-X0u" secondAttribute="trailing" id="vHM-X9-SaC"/>
                             </constraints>
                         </view>
                     </subviews>

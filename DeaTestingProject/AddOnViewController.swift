@@ -143,24 +143,22 @@ class AddOnViewController: UIViewController {
         cellsContainer.append(card11)
         
         tableView.reloadData()
-        
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-//        let topViewModel = AddOnTopCardView.ViewModel(style: .withPromo(giga: 100))
-//        //let topViewModel = AddOnTopCardView.ViewModel(style: .multiInformation(giga: 100, minutes: 100, sms: 100))
-//        let middleViewModel = AddOnMiddleCardView.ViewModel(style: .oneShotTravel(renewalPrice: 20.00, activationPrice: 17.00))
-//        
-//        addOnCardView.viewModel = AddOnCardView.ViewModel(
-//            title: "Travel Weekly",
-//            subTitle: "Valido per alcuni paesi extra EU",
-//            bottomTitle: "Sconto valido per i primi 3 mesi",
-//            topCardView: topViewModel,
-//            middleCardView: middleViewModel
-//        )
-    }
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+////        let topViewModel = AddOnTopCardView.ViewModel(style: .withPromo(giga: 100))
+////        //let topViewModel = AddOnTopCardView.ViewModel(style: .multiInformation(giga: 100, minutes: 100, sms: 100))
+////        let middleViewModel = AddOnMiddleCardView.ViewModel(style: .oneShotTravel(renewalPrice: 20.00, activationPrice: 17.00))
+////        
+////        addOnCardView.viewModel = AddOnCardView.ViewModel(
+////            title: "Travel Weekly",
+////            subTitle: "Valido per alcuni paesi extra EU",
+////            bottomTitle: "Sconto valido per i primi 3 mesi",
+////            topCardView: topViewModel,
+////            middleCardView: middleViewModel
+////        )
+//    }
 
 }
 
@@ -174,9 +172,9 @@ extension AddOnViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AddOnCell", for: indexPath) as? AddOnCell else { return UITableViewCell()}
         
-        cell.configureWith(addOnViewModel: cellsContainer[indexPath.row])
+        cell.configureWith(addOnViewModel: self.cellsContainer[indexPath.row])
         cell.cardView.delegate = self
-        
+        cell.updateConstraints()
         return cell
     }
 }

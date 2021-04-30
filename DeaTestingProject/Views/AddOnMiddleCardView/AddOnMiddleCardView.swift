@@ -12,37 +12,36 @@ class AddOnMiddleCardView: UIView {
     //MARK: - Properties
     
     var containerView = UIView()
-    private var style: AddOnMiddleViewStyle = .none
     
     var viewModel = ViewModel() {
         didSet {
-            style = viewModel.style
-            setupUIByStyle(style)
+            setupUIByStyle(viewModel.style)
         }
     }
     
     //MARK: - Lifecycle
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
-    }
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        commonInit()
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        commonInit()
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         commonInit()
     }
     
+ 
+    
     //MARK: - Methods
     
     private func commonInit() {
-//        let nib = UINib(nibName: "AddOnMiddleCardView", bundle: Bundle.main)
-//        nib.instantiate(withOwner: self, options: nil)
+        
         addSubview(containerView)
         containerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
         containerView.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +49,7 @@ class AddOnMiddleCardView: UIView {
         containerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         containerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         containerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        
     }
     
     private func setupGradientOnContainerView(belowView view: UIView) {
