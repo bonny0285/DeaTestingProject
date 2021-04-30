@@ -9,12 +9,9 @@ import UIKit
 
 class AddOnMiddleCardView: UIView {
     
-    //MARK: - Outlets
-    
-    @IBOutlet weak var containerView: UIView!
-    
     //MARK: - Properties
     
+    var containerView = UIView()
     private var style: AddOnMiddleViewStyle = .none
     
     var viewModel = ViewModel() {
@@ -44,8 +41,8 @@ class AddOnMiddleCardView: UIView {
     //MARK: - Methods
     
     private func commonInit() {
-        let nib = UINib(nibName: "AddOnMiddleCardView", bundle: Bundle.main)
-        nib.instantiate(withOwner: self, options: nil)
+//        let nib = UINib(nibName: "AddOnMiddleCardView", bundle: Bundle.main)
+//        nib.instantiate(withOwner: self, options: nil)
         addSubview(containerView)
         containerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
         containerView.translatesAutoresizingMaskIntoConstraints = false

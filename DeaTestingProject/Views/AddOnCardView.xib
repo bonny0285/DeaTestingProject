@@ -36,59 +36,40 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="556" height="665"/>
+            <rect key="frame" x="0.0" y="0.0" width="556" height="337"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0j-Y8-I6M" userLabel="ShadowView">
-                    <rect key="frame" x="5" y="5" width="556" height="655"/>
+                    <rect key="frame" x="5" y="5" width="556" height="327"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Mh-C3S" userLabel="ContainerView">
-                            <rect key="frame" x="0.0" y="0.0" width="556" height="655"/>
+                            <rect key="frame" x="0.0" y="0.0" width="556" height="327"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-G0-nTZ">
-                                    <rect key="frame" x="232.5" y="8" width="91.5" height="21"/>
-                                    <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="18"/>
-                                    <color key="textColor" name="DeaRed"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Da utilizzare entro due mesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tx-41-BNt">
-                                    <rect key="frame" x="191.5" y="33" width="173" height="16.5"/>
-                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
-                                    <color key="textColor" name="DeaGreyLight"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa2-t3-6mu" userLabel="Separator">
-                                    <rect key="frame" x="30" y="54.5" width="496" height="2"/>
-                                    <color key="backgroundColor" name="DeaGreyLight"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="2" id="nTQ-Ud-CPN"/>
-                                    </constraints>
-                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-xl-VwU" userLabel="TopView" customClass="AddOnTopCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="56.5" width="556" height="60"/>
+                                    <rect key="frame" x="0.0" y="60" width="556" height="60"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="QXJ-s5-idT"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-Rk-NRX" customClass="AddOnMiddleCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="116.5" width="556" height="72"/>
+                                    <rect key="frame" x="0.0" y="120" width="556" height="72"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="72" id="gvi-3Z-Sv4"/>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-W8-kOt">
-                                    <rect key="frame" x="20" y="566.5" width="516" height="72.5"/>
+                                    <rect key="frame" x="20" y="235.5" width="516" height="75.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sconto valido per i 3 rinnovi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-1x-1vK">
-                                            <rect key="frame" x="171" y="0.0" width="174.5" height="16.5"/>
+                                            <rect key="frame" x="171.5" y="0.0" width="173" height="19.5"/>
                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                             <color key="textColor" name="DeaRed"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-vd-2Ev">
-                                            <rect key="frame" x="0.0" y="24.5" width="516" height="48"/>
+                                            <rect key="frame" x="0.0" y="27.5" width="516" height="48"/>
                                             <color key="backgroundColor" red="0.0" green="0.38431372549999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="mXQ-Kv-JuS"/>
@@ -107,26 +88,57 @@
                                         <constraint firstAttribute="trailing" secondItem="KsW-vd-2Ev" secondAttribute="trailing" id="4ql-0w-BIY"/>
                                     </constraints>
                                 </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQE-9v-AYX">
+                                    <rect key="frame" x="0.0" y="0.0" width="556" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-G0-nTZ">
+                                            <rect key="frame" x="228" y="8" width="100.5" height="25"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="18"/>
+                                            <color key="textColor" name="DeaRed"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Da utilizzare entro due mesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tx-41-BNt">
+                                            <rect key="frame" x="191" y="37" width="174" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                                            <color key="textColor" name="DeaGreyLight"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa2-t3-6mu" userLabel="Separator">
+                                            <rect key="frame" x="20" y="58" width="516" height="2"/>
+                                            <color key="backgroundColor" red="0.89803921568627454" green="0.92941176470588238" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="nTQ-Ud-CPN"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Oa2-t3-6mu" secondAttribute="bottom" id="XFx-Gx-u2k"/>
+                                        <constraint firstItem="3tx-41-BNt" firstAttribute="centerX" secondItem="dQE-9v-AYX" secondAttribute="centerX" id="uq8-lU-U1v"/>
+                                        <constraint firstItem="Dl6-G0-nTZ" firstAttribute="centerX" secondItem="dQE-9v-AYX" secondAttribute="centerX" id="vFX-1g-1X3"/>
+                                        <constraint firstItem="Dl6-G0-nTZ" firstAttribute="top" secondItem="dQE-9v-AYX" secondAttribute="top" constant="8" id="ws4-ah-N5h"/>
+                                        <constraint firstItem="3tx-41-BNt" firstAttribute="top" secondItem="Dl6-G0-nTZ" secondAttribute="bottom" constant="4" id="xN3-fA-OA9"/>
+                                        <constraint firstItem="Oa2-t3-6mu" firstAttribute="leading" secondItem="dQE-9v-AYX" secondAttribute="leading" constant="20" id="xPu-eF-ufg"/>
+                                        <constraint firstAttribute="trailing" secondItem="Oa2-t3-6mu" secondAttribute="trailing" constant="20" id="yb4-V7-wLr"/>
+                                        <constraint firstAttribute="height" constant="60" id="zlK-0R-cj3"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="SuQ-W8-kOt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rOu-Rk-NRX" secondAttribute="bottom" constant="5" id="0LC-D1-6wO"/>
-                                <constraint firstItem="Z4u-xl-VwU" firstAttribute="top" secondItem="Oa2-t3-6mu" secondAttribute="bottom" id="2gW-yR-FJA"/>
+                                <constraint firstItem="dQE-9v-AYX" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="0qu-dY-gD6"/>
                                 <constraint firstAttribute="trailing" secondItem="SuQ-W8-kOt" secondAttribute="trailing" constant="20" id="3Wp-FK-6yq"/>
+                                <constraint firstItem="Z4u-xl-VwU" firstAttribute="top" secondItem="dQE-9v-AYX" secondAttribute="bottom" id="4ve-Yo-MW0"/>
                                 <constraint firstItem="rOu-Rk-NRX" firstAttribute="top" secondItem="Z4u-xl-VwU" secondAttribute="bottom" id="7zb-oh-NsB"/>
                                 <constraint firstItem="Z4u-xl-VwU" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="9G5-iV-nOP"/>
-                                <constraint firstItem="Dl6-G0-nTZ" firstAttribute="centerX" secondItem="bRe-Mh-C3S" secondAttribute="centerX" id="9hW-XV-V0f"/>
                                 <constraint firstAttribute="trailing" secondItem="Z4u-xl-VwU" secondAttribute="trailing" id="Aph-PH-Otd"/>
                                 <constraint firstItem="rOu-Rk-NRX" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" id="Cqr-8b-QW4"/>
-                                <constraint firstAttribute="trailing" secondItem="Oa2-t3-6mu" secondAttribute="trailing" constant="30" id="D11-eq-Iho"/>
+                                <constraint firstItem="dQE-9v-AYX" firstAttribute="top" secondItem="bRe-Mh-C3S" secondAttribute="top" id="D7z-tD-Rjq"/>
+                                <constraint firstAttribute="trailing" secondItem="dQE-9v-AYX" secondAttribute="trailing" id="Gge-Ww-cT9"/>
                                 <constraint firstAttribute="trailing" secondItem="rOu-Rk-NRX" secondAttribute="trailing" id="U9n-BK-2gI"/>
                                 <constraint firstAttribute="bottom" secondItem="SuQ-W8-kOt" secondAttribute="bottom" constant="16" id="aa3-Te-IJi"/>
-                                <constraint firstItem="Dl6-G0-nTZ" firstAttribute="top" secondItem="bRe-Mh-C3S" secondAttribute="top" constant="8" id="bdo-wm-jH1"/>
                                 <constraint firstItem="SuQ-W8-kOt" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" constant="20" id="dwB-1e-FjE"/>
-                                <constraint firstItem="Oa2-t3-6mu" firstAttribute="leading" secondItem="bRe-Mh-C3S" secondAttribute="leading" constant="30" id="gPC-DH-xGR"/>
-                                <constraint firstItem="3tx-41-BNt" firstAttribute="centerX" secondItem="bRe-Mh-C3S" secondAttribute="centerX" id="noq-fi-0nN"/>
-                                <constraint firstItem="Oa2-t3-6mu" firstAttribute="top" secondItem="3tx-41-BNt" secondAttribute="bottom" constant="5" id="p0B-CF-5qw"/>
-                                <constraint firstItem="3tx-41-BNt" firstAttribute="top" secondItem="Dl6-G0-nTZ" secondAttribute="bottom" constant="4" id="yXI-vO-Th7"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -147,7 +159,7 @@
                 <constraint firstAttribute="bottom" secondItem="Y0j-Y8-I6M" secondAttribute="bottom" constant="5" id="mdl-sU-IZG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="34.782608695652179" y="57.254464285714285"/>
+            <point key="canvasLocation" x="34.782608695652179" y="-52.566964285714285"/>
         </view>
     </objects>
     <resources>

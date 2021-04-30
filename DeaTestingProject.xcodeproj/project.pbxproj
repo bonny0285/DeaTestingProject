@@ -32,8 +32,6 @@
 		B4E8DF4E263962D4002F6258 /* AddOnCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E8DF4D263962D4002F6258 /* AddOnCardView.xib */; };
 		B4E8DF51263962E4002F6258 /* AddOnCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF50263962E4002F6258 /* AddOnCardView.swift */; };
 		B4E8DF562639713E002F6258 /* AddOnTopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF552639713D002F6258 /* AddOnTopCardView.swift */; };
-		B4E8DF5A26397149002F6258 /* AddOnTopCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E8DF5926397149002F6258 /* AddOnTopCardView.xib */; };
-		B4E8DF5E263999A2002F6258 /* AddOnMiddleCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E8DF5D263999A2002F6258 /* AddOnMiddleCardView.xib */; };
 		B4E8DF61263999AF002F6258 /* AddOnMiddleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF60263999AF002F6258 /* AddOnMiddleCardView.swift */; };
 		B4FF447F263AF2F700AF61B1 /* AddOnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF447D263AF2F700AF61B1 /* AddOnCell.swift */; };
 		B4FF4480263AF2F700AF61B1 /* AddOnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4FF447E263AF2F700AF61B1 /* AddOnCell.xib */; };
@@ -67,8 +65,6 @@
 		B4E8DF4D263962D4002F6258 /* AddOnCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOnCardView.xib; sourceTree = "<group>"; };
 		B4E8DF50263962E4002F6258 /* AddOnCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnCardView.swift; sourceTree = "<group>"; };
 		B4E8DF552639713D002F6258 /* AddOnTopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnTopCardView.swift; sourceTree = "<group>"; };
-		B4E8DF5926397149002F6258 /* AddOnTopCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOnTopCardView.xib; sourceTree = "<group>"; };
-		B4E8DF5D263999A2002F6258 /* AddOnMiddleCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOnMiddleCardView.xib; sourceTree = "<group>"; };
 		B4E8DF60263999AF002F6258 /* AddOnMiddleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnMiddleCardView.swift; sourceTree = "<group>"; };
 		B4FF447D263AF2F700AF61B1 /* AddOnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnCell.swift; sourceTree = "<group>"; };
 		B4FF447E263AF2F700AF61B1 /* AddOnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOnCell.xib; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				B4E8DF552639713D002F6258 /* AddOnTopCardView.swift */,
-				B4E8DF5926397149002F6258 /* AddOnTopCardView.xib */,
 			);
 			path = AddOnTopCardView;
 			sourceTree = "<group>";
@@ -173,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				B4E8DF60263999AF002F6258 /* AddOnMiddleCardView.swift */,
-				B4E8DF5D263999A2002F6258 /* AddOnMiddleCardView.xib */,
 			);
 			path = AddOnMiddleCardView;
 			sourceTree = "<group>";
@@ -264,8 +258,6 @@
 				B4E8DF4626396207002F6258 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
 				B4FF4480263AF2F700AF61B1 /* AddOnCell.xib in Resources */,
 				B4E8DF3B26396207002F6258 /* NunitoSans-SemiBold.ttf in Resources */,
-				B4E8DF5A26397149002F6258 /* AddOnTopCardView.xib in Resources */,
-				B4E8DF5E263999A2002F6258 /* AddOnMiddleCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,6 +36,7 @@ class AddOnCardView: UIView {
     var viewModel = ViewModel() {
         didSet {
             topCardViewHeight.constant = viewModel.topCardView?.style.height ?? 0
+
             titleLabel.text = viewModel.title
             subTitleLabel.text = viewModel.subTitle
             
@@ -60,7 +61,7 @@ class AddOnCardView: UIView {
                 shadowView.bringSubviewToFront(imageContainer!)
                 imageContainer!.translatesAutoresizingMaskIntoConstraints = false
                 imageContainer!.topAnchor.constraint(equalTo: shadowView.topAnchor, constant: -11).isActive = true
-                imageContainer!.bottomAnchor.constraint(equalTo: separator.topAnchor, constant: 0).isActive = true
+                imageContainer!.bottomAnchor.constraint(equalTo: middleCardView.topAnchor, constant: 0).isActive = true
                 imageContainer!.leadingAnchor.constraint(equalTo: shadowView.leadingAnchor, constant: -11).isActive = true
             }
         }

@@ -9,13 +9,9 @@ import UIKit
 
 class AddOnTopCardView: UIView {
     
-    //MARK: - Outlets
-
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var containerViewHeight: NSLayoutConstraint!
-    
     //MARK: - Properties
-
+    
+    var containerView = UIView()
     private var style: AddOnTopViewStyle = .none
     var viewModel = ViewModel() {
         didSet {
@@ -39,8 +35,8 @@ class AddOnTopCardView: UIView {
     //MARK: - Methods
 
     private func commonInit() {
-        let nib = UINib(nibName: "AddOnTopCardView", bundle: Bundle.main)
-        nib.instantiate(withOwner: self, options: nil)
+//        let nib = UINib(nibName: "AddOnTopCardView", bundle: Bundle.main)
+//        nib.instantiate(withOwner: self, options: nil)
         
         addSubview(containerView)
     }
@@ -141,13 +137,13 @@ class AddOnTopCardView: UIView {
         )
         
         let leftSeparator = UIView()
-        leftSeparator.backgroundColor = getDeaColor(.deaGreyLight)
+        leftSeparator.backgroundColor = UIColor(red: 229, green: 237, blue: 238)//getDeaColor(.deaGreyLight)
         leftSeparator.translatesAutoresizingMaskIntoConstraints = false
         leftSeparator.heightAnchor.constraint(equalToConstant: 24).isActive = true
         leftSeparator.widthAnchor.constraint(equalToConstant: 1).isActive = true
         
         let rightSeparator = UIView()
-        rightSeparator.backgroundColor = getDeaColor(.deaGreyLight)
+        rightSeparator.backgroundColor = UIColor(red: 229, green: 237, blue: 238)//getDeaColor(.deaGreyLight)
         rightSeparator.translatesAutoresizingMaskIntoConstraints = false
         rightSeparator.heightAnchor.constraint(equalToConstant: 24).isActive = true
         rightSeparator.widthAnchor.constraint(equalToConstant: 1).isActive = true
@@ -159,7 +155,7 @@ class AddOnTopCardView: UIView {
         containerStackView.addArrangedSubview(rightStackView)
         
         let bottomSeparator = UIView()
-        bottomSeparator.backgroundColor = getDeaColor(.deaGreyLight)
+        bottomSeparator.backgroundColor = UIColor(red: 229, green: 237, blue: 238)//getDeaColor(.deaGreyLight)
         containerView.addSubview(bottomSeparator)
         containerView.addSubview(containerStackView)
         bottomSeparator.translatesAutoresizingMaskIntoConstraints = false
