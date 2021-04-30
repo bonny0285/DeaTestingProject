@@ -31,7 +31,7 @@
                 <outlet property="subTitleLabel" destination="3tx-41-BNt" id="SIP-0y-FXf"/>
                 <outlet property="titleLabel" destination="Dl6-G0-nTZ" id="K4l-TU-5k9"/>
                 <outlet property="topCardView" destination="Z4u-xl-VwU" id="wPu-wj-hVo"/>
-                <outlet property="topCardViewHeight" destination="QXJ-s5-idT" id="AN4-Fr-6A9"/>
+                <outlet property="topCardViewHeight" destination="QXJ-s5-idT" id="XKS-na-wQC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -64,15 +64,15 @@
                                         <constraint firstAttribute="height" constant="2" id="nTQ-Ud-CPN"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-xl-VwU" userLabel="TopView" customClass="AddOnTopCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="63.5" width="556" height="60"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-xl-VwU" userLabel="TopView" customClass="AddOnTopCardView" customModule="DeaTestingProject" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="56.5" width="556" height="60"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="QXJ-s5-idT"/>
+                                        <constraint firstAttribute="height" constant="60" id="QXJ-s5-idT"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-Rk-NRX" customClass="AddOnMiddleCardView" customModule="DeaTestingProject" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="133.5" width="556" height="72"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-Rk-NRX" customClass="AddOnMiddleCardView" customModule="DeaTestingProject" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="116.5" width="556" height="72"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="72" id="gvi-3Z-Sv4"/>

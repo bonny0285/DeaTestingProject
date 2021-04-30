@@ -35,6 +35,7 @@ class AddOnCardView: UIView {
     
     var viewModel = ViewModel() {
         didSet {
+            topCardViewHeight.constant = viewModel.topCardView?.style.height ?? 0
             titleLabel.text = viewModel.title
             subTitleLabel.text = viewModel.subTitle
             

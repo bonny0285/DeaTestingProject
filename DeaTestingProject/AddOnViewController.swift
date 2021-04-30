@@ -175,7 +175,15 @@ extension AddOnViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AddOnCell", for: indexPath) as? AddOnCell else { return UITableViewCell()}
         
         cell.configureWith(addOnViewModel: cellsContainer[indexPath.row])
+        cell.cardView.delegate = self
         
         return cell
+    }
+}
+
+
+extension AddOnViewController: AddOnCardViewDelegate {
+    func discoverButtonWasPressed() {
+        print("Button pressed")
     }
 }
