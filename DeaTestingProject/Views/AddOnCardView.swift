@@ -22,7 +22,6 @@ class AddOnCardView: UIView {
     @IBOutlet weak var separator: UIView!
     @IBOutlet weak var bottomHintLabel: UILabel!
     @IBOutlet weak var discoverButton: UIButton!
-    @IBOutlet weak var bottomHeight: NSLayoutConstraint!
     
     // TOP CARD VIEW
     @IBOutlet weak var topCardView: AddOnTopCardView!
