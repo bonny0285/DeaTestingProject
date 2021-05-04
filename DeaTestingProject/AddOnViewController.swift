@@ -27,6 +27,10 @@ class AddOnViewController: UIViewController {
         tableView.dataSource = self
         let nib = UINib(nibName: "AddOnCell", bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: "AddOnCell")
+        tableView.estimatedRowHeight = 264
+//        tableView.estimatedSectionHeaderHeight = 0
+//        tableView.estimatedSectionFooterHeight = 0
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {

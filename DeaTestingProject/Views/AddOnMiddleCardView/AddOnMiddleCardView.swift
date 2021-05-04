@@ -43,19 +43,22 @@ class AddOnMiddleCardView: UIView {
     private func commonInit() {
         
         addSubview(containerView)
-        containerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        containerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        containerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+//        containerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
+//        containerView.translatesAutoresizingMaskIntoConstraints = false
+//        containerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+//        containerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+//        containerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+//        containerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
     }
     
     private func setupGradientOnContainerView(belowView view: UIView) {
-        let gradient = createLayerInMiddleView(pathOffset: 2.0)
-        containerView.layer.insertSublayer(gradient, below: view.layer)
-        containerView.clipsToBounds = true
+        DispatchQueue.main.async {
+            let gradient = self.createLayerInMiddleView(pathOffset: 2.0)
+            self.containerView.layer.insertSublayer(gradient, below: view.layer)
+            self.containerView.clipsToBounds = true
+        }
+        
     }
     
     private func createLayerInMiddleView(pathOffset: CGFloat) -> CAGradientLayer {
@@ -109,6 +112,17 @@ class AddOnMiddleCardView: UIView {
     }
     
     private func setupUIByStyle(_ style: AddOnMiddleViewStyle) {
+        containerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        containerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        containerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 72).isActive = true
+//        if containerView.frame.height == 0 {
+//            self.layoutIfNeeded()
+//        }
+        
         
         containerView.invalidate()
         
@@ -166,7 +180,7 @@ class AddOnMiddleCardView: UIView {
         renewalStack.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 32).isActive = true
         
         setupGradientOnContainerView(belowView: renewalStack)
-        
+    
         // Activation - right side of view
         
         let mainActivationStackView = getUnaTantumStackView(activationPrice: activationPrice)
@@ -482,6 +496,10 @@ extension AddOnMiddleCardView {
         case oneShotStandard(freeActivation: Bool, giga: Double, activationPrice: Double)
         
         case recurrent(freeActivation: Bool, renewalOldPrice: Double?, renewalPrice: Double, activationOldPrice: Double?, activationPrice: Double)
+        
+        var height: CGFloat {
+            return 72
+        }
     }
     
     struct ViewModel {

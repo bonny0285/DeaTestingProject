@@ -29,6 +29,7 @@ class AddOnCardView: UIView {
     
     // MIDDLE CARD VIEW
     @IBOutlet weak var middleCardView: AddOnMiddleCardView! 
+    @IBOutlet weak var middleCardViewHeight: NSLayoutConstraint!
     
     //MARK: - Properties
     var imageContainer: UIImageView?
@@ -36,6 +37,7 @@ class AddOnCardView: UIView {
     var viewModel = ViewModel() {
         didSet {
             topCardViewHeight.constant = viewModel.topCardView.style.height
+            //middleCardViewHeight.constant = viewModel.middleCardView.style.height
             //bottomHeight.constant = viewModel.bottomTitle != nil ? 5 : 3
 
             titleLabel.text = viewModel.title
@@ -88,7 +90,7 @@ class AddOnCardView: UIView {
     }
     
     //MARK: - Methods
-
+    
     private func commonInit() {
         let nib = UINib(nibName: "AddOnCardView", bundle: Bundle.main)
         nib.instantiate(withOwner: self, options: nil)
@@ -102,6 +104,7 @@ class AddOnCardView: UIView {
         
         setupShadowView()
         setupContainerView()
+    
     }
     
     private func setupShadowView() {

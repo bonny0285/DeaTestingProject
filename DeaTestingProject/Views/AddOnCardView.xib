@@ -26,6 +26,7 @@
                 <outlet property="containerView" destination="bRe-Mh-C3S" id="QE9-0E-DXE"/>
                 <outlet property="discoverButton" destination="KsW-vd-2Ev" id="hme-dW-ln2"/>
                 <outlet property="middleCardView" destination="rOu-Rk-NRX" id="uCM-Gc-jPX"/>
+                <outlet property="middleCardViewHeight" destination="gvi-3Z-Sv4" id="B5j-4N-07J"/>
                 <outlet property="separator" destination="Oa2-t3-6mu" id="Hxl-2Y-yli"/>
                 <outlet property="shadowView" destination="Y0j-Y8-I6M" id="OGs-Fv-H5d"/>
                 <outlet property="subTitleLabel" destination="3tx-41-BNt" id="SIP-0y-FXf"/>
@@ -76,16 +77,16 @@
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-W8-kOt">
-                                    <rect key="frame" x="20" y="238.5" width="516" height="72.5"/>
+                                    <rect key="frame" x="20" y="237" width="516" height="74"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sconto valido per i 3 rinnovi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-1x-1vK">
-                                            <rect key="frame" x="171" y="0.0" width="174.5" height="16.5"/>
+                                            <rect key="frame" x="171.5" y="0.0" width="173" height="18"/>
                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                             <color key="textColor" name="DeaRed"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-vd-2Ev">
-                                            <rect key="frame" x="0.0" y="24.5" width="516" height="48"/>
+                                            <rect key="frame" x="0.0" y="26" width="516" height="48"/>
                                             <color key="backgroundColor" red="0.0" green="0.38431372549999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="mXQ-Kv-JuS"/>
@@ -109,13 +110,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="556" height="60"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl6-G0-nTZ">
-                                            <rect key="frame" x="232.5" y="8" width="91.5" height="21"/>
+                                            <rect key="frame" x="228" y="8" width="100.5" height="25"/>
                                             <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="18"/>
                                             <color key="textColor" name="DeaRed"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Da utilizzare entro due mesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tx-41-BNt">
-                                            <rect key="frame" x="191.5" y="33" width="173" height="16.5"/>
+                                            <rect key="frame" x="191" y="37" width="174" height="19.5"/>
                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                             <color key="textColor" name="DeaGreyLight"/>
                                             <nil key="highlightedColor"/>

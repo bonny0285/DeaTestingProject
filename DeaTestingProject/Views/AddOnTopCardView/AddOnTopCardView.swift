@@ -246,8 +246,11 @@ extension AddOnTopCardView {
     enum AddOnTopViewStyle {
         
         case none
+        
         case multiInformation(giga: Double, minutes: Double, sms: Double)
+        
         case singleInformation(giga: Double)
+        
         case withPromo(giga: Double)
        
         var height: CGFloat {
