@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44A2796264A73B300CA52B3 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A2795264A73B300CA52B3 /* Dashboard.swift */; };
+		B44A2798264A73C900CA52B3 /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44A2797264A73C900CA52B3 /* Dashboard.xib */; };
+		B4C5C8F1264989D200D22C0A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */; };
 		B4E8DF13263960BC002F6258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF12263960BC002F6258 /* AppDelegate.swift */; };
 		B4E8DF15263960BC002F6258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF14263960BC002F6258 /* SceneDelegate.swift */; };
 		B4E8DF17263960BC002F6258 /* AddOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF16263960BC002F6258 /* AddOnViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B44A2795264A73B300CA52B3 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		B44A2797264A73C900CA52B3 /* Dashboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
+		B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B4E8DF0F263960BC002F6258 /* DeaTestingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeaTestingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E8DF12263960BC002F6258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E8DF14263960BC002F6258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B44A2793264A6F6700CA52B3 /* Add-on */ = {
+			isa = PBXGroup;
+			children = (
+				B4FF447C263AF2D100AF61B1 /* AddOnCell */,
+				B4E8DF542639710B002F6258 /* AddOnTopCardView */,
+				B4E8DF5C26399988002F6258 /* AddOnMiddleCardView */,
+				B4E8DF50263962E4002F6258 /* AddOnCardView.swift */,
+				B4E8DF4D263962D4002F6258 /* AddOnCardView.xib */,
+			);
+			path = "Add-on";
+			sourceTree = "<group>";
+		};
+		B44A2794264A6F9A00CA52B3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B44A2795264A73B300CA52B3 /* Dashboard.swift */,
+				B44A2797264A73C900CA52B3 /* Dashboard.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B4C5C8EF264989B200D22C0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8DF16263960BC002F6258 /* AddOnViewController.swift */,
+				B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B4E8DF06263960BC002F6258 = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +136,12 @@
 		B4E8DF11263960BC002F6258 /* DeaTestingProject */ = {
 			isa = PBXGroup;
 			children = (
+				B4C5C8EF264989B200D22C0A /* ViewControllers */,
 				B4E8DF4C263962AA002F6258 /* Views */,
 				B4E8DF482639624F002F6258 /* SupportingClasses */,
 				B4E8DF2726396166002F6258 /* Font */,
 				B4E8DF12263960BC002F6258 /* AppDelegate.swift */,
 				B4E8DF14263960BC002F6258 /* SceneDelegate.swift */,
-				B4E8DF16263960BC002F6258 /* AddOnViewController.swift */,
 				B4E8DF18263960BC002F6258 /* Main.storyboard */,
 				B4E8DF1B263960BD002F6258 /* Assets.xcassets */,
 				B4E8DF1D263960BD002F6258 /* LaunchScreen.storyboard */,
@@ -147,11 +183,8 @@
 		B4E8DF4C263962AA002F6258 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B4FF447C263AF2D100AF61B1 /* AddOnCell */,
-				B4E8DF542639710B002F6258 /* AddOnTopCardView */,
-				B4E8DF5C26399988002F6258 /* AddOnMiddleCardView */,
-				B4E8DF50263962E4002F6258 /* AddOnCardView.swift */,
-				B4E8DF4D263962D4002F6258 /* AddOnCardView.xib */,
+				B44A2794264A6F9A00CA52B3 /* Dashboard */,
+				B44A2793264A6F6700CA52B3 /* Add-on */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +276,7 @@
 				B4E8DF3A26396207002F6258 /* NunitoSans-BoldItalic.ttf in Resources */,
 				B4E8DF4426396207002F6258 /* NunitoSans-Regular.ttf in Resources */,
 				B4E8DF3E26396207002F6258 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				B44A2798264A73C900CA52B3 /* Dashboard.xib in Resources */,
 				B4E8DF4526396207002F6258 /* NunitoSans-Bold.ttf in Resources */,
 				B4E8DF4326396207002F6258 /* NunitoSans-LightItalic.ttf in Resources */,
 				B4E8DF4026396207002F6258 /* NunitoSans-BlackItalic.ttf in Resources */,
@@ -269,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4FF447F263AF2F700AF61B1 /* AddOnCell.swift in Sources */,
+				B4C5C8F1264989D200D22C0A /* DashboardViewController.swift in Sources */,
+				B44A2796264A73B300CA52B3 /* Dashboard.swift in Sources */,
 				B4E8DF61263999AF002F6258 /* AddOnMiddleCardView.swift in Sources */,
 				B4E8DF17263960BC002F6258 /* AddOnViewController.swift in Sources */,
 				B4E8DF13263960BC002F6258 /* AppDelegate.swift in Sources */,

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Black.ttf">
+            <string>NunitoSans-Black</string>
+        </array>
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Dashboard" customModule="DeaTestingProject" customModuleProvider="target">
+            <connections>
+                <outlet property="cardMennuButton" destination="cbI-Cn-b4s" id="Xab-BJ-hvx"/>
+                <outlet property="cardSubtitleLabel" destination="Icm-X4-KRN" id="wPQ-sH-7gA"/>
+                <outlet property="cardTitleLabel" destination="ALS-Zc-LNi" id="Utb-gq-URN"/>
+                <outlet property="cardView" destination="HSJ-Dp-52K" id="Lan-y3-4TQ"/>
+                <outlet property="containerView" destination="kUd-ec-hic" id="wEw-4a-LxX"/>
+                <outlet property="donutSubtitleLabel" destination="WiK-t1-Eic" id="aKQ-oL-jfa"/>
+                <outlet property="donutTitleLabel" destination="3dZ-Ms-qgI" id="NcS-L3-na5"/>
+                <outlet property="donutView" destination="5UH-MO-VRW" id="N3S-9z-N79"/>
+                <outlet property="shadowView" destination="GZR-nN-tEF" id="vIz-eF-QGV"/>
+                <outlet property="titleLabel" destination="eIj-kE-T1u" id="dsy-bA-3R7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="473"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUd-ec-hic">
+                    <rect key="frame" x="0.0" y="0.0" width="460" height="473"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non hai più giga. Rinnova very subito!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-kE-T1u">
+                            <rect key="frame" x="20" y="0.0" width="305.5" height="61"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="26"/>
+                            <color key="textColor" name="DeaRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-nN-tEF">
+                            <rect key="frame" x="20" y="76" width="420" height="382"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSJ-Dp-52K">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="382"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFFERTA COMPLESSIVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALS-Zc-LNi">
+                                            <rect key="frame" x="16" y="6" width="362" height="21"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="18"/>
+                                            <color key="textColor" name="DeaGreenLabels"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-Cn-b4s">
+                                            <rect key="frame" x="382" y="8" width="20" height="20"/>
+                                            <color key="backgroundColor" name="DeaWhiteTotal"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="qPz-2a-zGY"/>
+                                                <constraint firstAttribute="width" constant="20" id="ysC-Az-U9v"/>
+                                            </constraints>
+                                            <color key="tintColor" name="DeaGreenLabels"/>
+                                            <state key="normal" image="link.circle.fill" catalog="system"/>
+                                            <connections>
+                                                <action selector="cardMenuButtonWasPressed:" destination="-1" eventType="touchUpInside" id="ELv-nT-4rK"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorri a destra per vedere tutti i dettagli dei tuoi consumi." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-X4-KRN">
+                                            <rect key="frame" x="16" y="27" width="294" height="35"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="15"/>
+                                            <color key="textColor" name="DeaBlackLight"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UH-MO-VRW">
+                                            <rect key="frame" x="30" y="82" width="118" height="118"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="vP9-sC-BKD">
+                                                    <rect key="frame" x="0.0" y="30.5" width="118" height="57.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dZ-Ms-qgI">
+                                                            <rect key="frame" x="45.5" y="0.0" width="27" height="28"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="24"/>
+                                                            <color key="textColor" name="DeaRed"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giga disponibili di 130 totali" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-t1-Eic">
+                                                            <rect key="frame" x="17.5" y="34" width="83" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="DeaGreyLight"/>
+                                            <constraints>
+                                                <constraint firstItem="vP9-sC-BKD" firstAttribute="leading" secondItem="5UH-MO-VRW" secondAttribute="leading" id="2hB-5t-Fb5"/>
+                                                <constraint firstAttribute="trailing" secondItem="vP9-sC-BKD" secondAttribute="trailing" id="Beq-Yr-T37"/>
+                                                <constraint firstItem="vP9-sC-BKD" firstAttribute="centerX" secondItem="5UH-MO-VRW" secondAttribute="centerX" id="CzX-Vf-dlB"/>
+                                                <constraint firstItem="vP9-sC-BKD" firstAttribute="centerY" secondItem="5UH-MO-VRW" secondAttribute="centerY" id="dRI-S5-aEW"/>
+                                                <constraint firstAttribute="height" constant="118" id="dU9-z7-3go"/>
+                                                <constraint firstAttribute="width" constant="118" id="vbd-xc-S3w"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiamate e SMS illimitati" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Te-3e-sMA">
+                                            <rect key="frame" x="168" y="129.5" width="232" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="20"/>
+                                            <color key="textColor" name="DeaGreenLabels"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="DeaWhiteTotal"/>
+                                    <constraints>
+                                        <constraint firstItem="5UH-MO-VRW" firstAttribute="leading" secondItem="HSJ-Dp-52K" secondAttribute="leading" constant="30" id="0xI-er-tMH"/>
+                                        <constraint firstItem="Icm-X4-KRN" firstAttribute="leading" secondItem="HSJ-Dp-52K" secondAttribute="leading" constant="16" id="FrH-Km-AWg"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Icm-X4-KRN" secondAttribute="trailing" constant="30" id="Mhk-Ie-i1t"/>
+                                        <constraint firstItem="5UH-MO-VRW" firstAttribute="top" secondItem="Icm-X4-KRN" secondAttribute="bottom" constant="20" id="PLJ-JV-ZRr"/>
+                                        <constraint firstItem="9Te-3e-sMA" firstAttribute="centerY" secondItem="5UH-MO-VRW" secondAttribute="centerY" id="Ubp-9s-whX"/>
+                                        <constraint firstItem="ALS-Zc-LNi" firstAttribute="top" secondItem="HSJ-Dp-52K" secondAttribute="top" constant="6" id="aAy-7M-V2k"/>
+                                        <constraint firstAttribute="trailing" secondItem="ALS-Zc-LNi" secondAttribute="trailing" constant="42" id="nhA-Rf-eTM"/>
+                                        <constraint firstItem="cbI-Cn-b4s" firstAttribute="leading" secondItem="ALS-Zc-LNi" secondAttribute="trailing" constant="4" id="qQ1-26-10h"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5UH-MO-VRW" secondAttribute="bottom" constant="20" id="qkb-Sy-ILm"/>
+                                        <constraint firstItem="9Te-3e-sMA" firstAttribute="leading" secondItem="5UH-MO-VRW" secondAttribute="trailing" constant="20" id="s3c-fP-Xfx"/>
+                                        <constraint firstItem="cbI-Cn-b4s" firstAttribute="top" secondItem="HSJ-Dp-52K" secondAttribute="top" constant="8" id="s8x-te-Eks"/>
+                                        <constraint firstItem="ALS-Zc-LNi" firstAttribute="leading" secondItem="HSJ-Dp-52K" secondAttribute="leading" constant="16" id="vVH-no-Fyk"/>
+                                        <constraint firstItem="Icm-X4-KRN" firstAttribute="top" secondItem="ALS-Zc-LNi" secondAttribute="bottom" id="xlj-9x-wfn"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Te-3e-sMA" secondAttribute="trailing" constant="20" id="y3x-Vb-pSg"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="HSJ-Dp-52K" secondAttribute="trailing" id="CwH-6k-Wxw"/>
+                                <constraint firstItem="HSJ-Dp-52K" firstAttribute="top" secondItem="GZR-nN-tEF" secondAttribute="top" id="KBD-93-6bc"/>
+                                <constraint firstItem="HSJ-Dp-52K" firstAttribute="leading" secondItem="GZR-nN-tEF" secondAttribute="leading" id="MCn-hq-kAZ"/>
+                                <constraint firstAttribute="bottom" secondItem="HSJ-Dp-52K" secondAttribute="bottom" id="a0H-FZ-CxI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GZR-nN-tEF" firstAttribute="leading" secondItem="kUd-ec-hic" secondAttribute="leading" constant="20" id="7Yl-Fe-o7c"/>
+                        <constraint firstAttribute="bottom" secondItem="GZR-nN-tEF" secondAttribute="bottom" constant="15" id="HbG-9w-QkC"/>
+                        <constraint firstAttribute="trailing" secondItem="GZR-nN-tEF" secondAttribute="trailing" constant="20" id="Ly4-JE-Rez"/>
+                        <constraint firstItem="GZR-nN-tEF" firstAttribute="top" secondItem="eIj-kE-T1u" secondAttribute="bottom" constant="15" id="Urv-s0-ZGA"/>
+                        <constraint firstItem="eIj-kE-T1u" firstAttribute="leading" secondItem="kUd-ec-hic" secondAttribute="leading" constant="20" id="XW4-tE-NTO"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eIj-kE-T1u" secondAttribute="trailing" constant="40" id="jNl-Ml-YQC"/>
+                        <constraint firstItem="eIj-kE-T1u" firstAttribute="top" secondItem="kUd-ec-hic" secondAttribute="top" id="xcf-vn-cu5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kUd-ec-hic" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8he-zz-the"/>
+                <constraint firstItem="kUd-ec-hic" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JUG-ER-SHf"/>
+                <constraint firstItem="kUd-ec-hic" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xn8-Ct-pAc"/>
+                <constraint firstAttribute="bottom" secondItem="kUd-ec-hic" secondAttribute="bottom" id="weK-pm-23M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-495.6521739130435" y="169.75446428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="link.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="DeaBlackLight">
+            <color red="0.11764705882352941" green="0.12156862745098039" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaGreenLabels">
+            <color red="0.0" green="0.3843137254901961" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaGreyLight">
+            <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaRed">
+            <color red="0.78823529411764703" green="0.30980392156862746" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaWhiteTotal">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

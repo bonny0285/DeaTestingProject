@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7A7-TX-1BE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Black.ttf">
+            <string>NunitoSans-Black</string>
+        </array>
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Add On View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -38,10 +50,192 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="118.52678571428571"/>
         </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="r7x-sJ-4qY">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="7A7-TX-1BE" customClass="DashboardViewController" customModule="DeaTestingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HHV-lI-jAs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-Qz-luE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYg-MK-b0B">
+                                        <rect key="frame" x="41" y="29.5" width="22.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="388 0980000    v" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPw-EX-3qE">
+                                        <rect key="frame" x="245" y="39" width="128" height="22"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8980392157" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zYg-MK-b0B" firstAttribute="leading" secondItem="cHN-Qz-luE" secondAttribute="leading" constant="41" id="BiP-3Q-hiY"/>
+                                    <constraint firstItem="zYg-MK-b0B" firstAttribute="centerY" secondItem="cHN-Qz-luE" secondAttribute="centerY" id="Gix-1v-8hr"/>
+                                    <constraint firstAttribute="height" constant="100" id="QlF-8d-7Kj"/>
+                                    <constraint firstItem="uPw-EX-3qE" firstAttribute="centerY" secondItem="cHN-Qz-luE" secondAttribute="centerY" id="hv8-l2-YKf"/>
+                                    <constraint firstAttribute="trailing" secondItem="uPw-EX-3qE" secondAttribute="trailing" constant="41" id="pEm-qe-jHb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aN-L6-Z2c">
+                                <rect key="frame" x="0.0" y="769" width="414" height="93"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGP-md-Qtj">
+                                        <rect key="frame" x="253" y="22.5" width="121" height="48"/>
+                                        <color key="backgroundColor" name="DeaGreenMain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="Ntv-fw-oaB"/>
+                                            <constraint firstAttribute="height" constant="48" id="PjY-JU-AyC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="16"/>
+                                        <state key="normal" title="Ricarica">
+                                            <color key="titleColor" red="0.8980392157" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DWl-17-PcJ">
+                                        <rect key="frame" x="40" y="23.5" width="95.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credito residuo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-Ft-6Tz">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                                                <color key="textColor" name="DeaBlackLight"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8,49€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-RQ-J2j">
+                                                <rect key="frame" x="29" y="26.5" width="37.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                                <color key="textColor" name="DeaBlackTotal"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8980392157" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DWl-17-PcJ" firstAttribute="centerY" secondItem="5aN-L6-Z2c" secondAttribute="centerY" id="IBc-2y-Qn5"/>
+                                    <constraint firstItem="DWl-17-PcJ" firstAttribute="leading" secondItem="5aN-L6-Z2c" secondAttribute="leading" constant="40" id="Nwc-Xv-de3"/>
+                                    <constraint firstItem="fGP-md-Qtj" firstAttribute="centerY" secondItem="5aN-L6-Z2c" secondAttribute="centerY" id="syp-cy-1pm"/>
+                                    <constraint firstAttribute="height" constant="93" id="tLc-UQ-4DR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fGP-md-Qtj" secondAttribute="trailing" constant="40" id="uJZ-Yj-Koa"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-Sf-FvE">
+                                <rect key="frame" x="0.0" y="144" width="414" height="625"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-mf-794" userLabel="VerticalScrollViewContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-t7-j1U">
+                                                <rect key="frame" x="30" y="0.0" width="354" height="65"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porta un amico in very" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-wo-S8U">
+                                                        <rect key="frame" x="90.5" y="21.5" width="173" height="22"/>
+                                                        <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="16"/>
+                                                        <color key="textColor" name="DeaGreenLabels"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="gX8-m4-nZU"/>
+                                                    <constraint firstItem="pjM-wo-S8U" firstAttribute="centerY" secondItem="Mjb-t7-j1U" secondAttribute="centerY" id="p9b-Aw-Iqn"/>
+                                                    <constraint firstItem="pjM-wo-S8U" firstAttribute="centerX" secondItem="Mjb-t7-j1U" secondAttribute="centerX" id="uPL-fF-skc"/>
+                                                </constraints>
+                                            </view>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0s-Gz-mLX">
+                                                <rect key="frame" x="0.0" y="74" width="414" height="535"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iH-Lo-SyV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
+                                                        <color key="backgroundColor" red="0.8980392157" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0iH-Lo-SyV" secondAttribute="trailing" id="PEF-0f-6aw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0iH-Lo-SyV" secondAttribute="bottom" id="PkY-uF-R7X"/>
+                                                    <constraint firstItem="0iH-Lo-SyV" firstAttribute="top" secondItem="i0s-Gz-mLX" secondAttribute="top" id="WBx-Ih-8Z3"/>
+                                                    <constraint firstItem="0iH-Lo-SyV" firstAttribute="height" secondItem="i0s-Gz-mLX" secondAttribute="height" id="jtC-3v-ajB"/>
+                                                    <constraint firstItem="0iH-Lo-SyV" firstAttribute="width" secondItem="i0s-Gz-mLX" secondAttribute="width" priority="250" id="wGl-Ty-9Zn"/>
+                                                    <constraint firstItem="0iH-Lo-SyV" firstAttribute="leading" secondItem="i0s-Gz-mLX" secondAttribute="leading" id="xWn-R5-u2i"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="RAZ-Xo-KWF"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="4mL-Pr-jgb"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8980392157" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="i0s-Gz-mLX" firstAttribute="top" secondItem="Mjb-t7-j1U" secondAttribute="bottom" constant="9" id="Cm5-Sc-uld"/>
+                                            <constraint firstItem="Mjb-t7-j1U" firstAttribute="leading" secondItem="tw9-mf-794" secondAttribute="leading" constant="30" id="MVI-lC-17M"/>
+                                            <constraint firstAttribute="trailing" secondItem="i0s-Gz-mLX" secondAttribute="trailing" id="OdX-M7-ybn"/>
+                                            <constraint firstItem="i0s-Gz-mLX" firstAttribute="leading" secondItem="tw9-mf-794" secondAttribute="leading" id="Pnl-iV-dGz"/>
+                                            <constraint firstAttribute="bottom" secondItem="i0s-Gz-mLX" secondAttribute="bottom" constant="16" id="gsk-VZ-yo3"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mjb-t7-j1U" secondAttribute="trailing" constant="30" id="r95-XG-m9o"/>
+                                            <constraint firstItem="Mjb-t7-j1U" firstAttribute="top" secondItem="tw9-mf-794" secondAttribute="top" id="vIQ-oH-glr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tw9-mf-794" firstAttribute="height" secondItem="NgS-Sf-FvE" secondAttribute="height" priority="250" id="F9z-tF-HXX"/>
+                                    <constraint firstAttribute="trailing" secondItem="tw9-mf-794" secondAttribute="trailing" id="IDl-OQ-Q78"/>
+                                    <constraint firstItem="tw9-mf-794" firstAttribute="leading" secondItem="NgS-Sf-FvE" secondAttribute="leading" id="IeH-Q9-2Vv"/>
+                                    <constraint firstItem="tw9-mf-794" firstAttribute="width" secondItem="NgS-Sf-FvE" secondAttribute="width" id="N8t-ki-f9a"/>
+                                    <constraint firstAttribute="bottom" secondItem="tw9-mf-794" secondAttribute="bottom" id="Y51-CQ-Yfs"/>
+                                    <constraint firstItem="tw9-mf-794" firstAttribute="top" secondItem="NgS-Sf-FvE" secondAttribute="top" id="iGd-ug-UbP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="laZ-Ce-f00"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="eww-Nc-qON"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wlj-hS-vCb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cHN-Qz-luE" firstAttribute="top" secondItem="Wlj-hS-vCb" secondAttribute="top" id="DSG-bj-NY1"/>
+                            <constraint firstItem="Wlj-hS-vCb" firstAttribute="bottom" secondItem="5aN-L6-Z2c" secondAttribute="bottom" id="FiS-2p-mA8"/>
+                            <constraint firstItem="Wlj-hS-vCb" firstAttribute="trailing" secondItem="NgS-Sf-FvE" secondAttribute="trailing" id="G7Q-6M-6dP"/>
+                            <constraint firstItem="NgS-Sf-FvE" firstAttribute="leading" secondItem="Wlj-hS-vCb" secondAttribute="leading" id="H5h-FO-S2X"/>
+                            <constraint firstItem="5aN-L6-Z2c" firstAttribute="top" secondItem="NgS-Sf-FvE" secondAttribute="bottom" id="Qbr-P2-Jc6"/>
+                            <constraint firstItem="NgS-Sf-FvE" firstAttribute="top" secondItem="cHN-Qz-luE" secondAttribute="bottom" id="TP5-CB-X2f"/>
+                            <constraint firstItem="cHN-Qz-luE" firstAttribute="leading" secondItem="Wlj-hS-vCb" secondAttribute="leading" id="YdR-eO-jiv"/>
+                            <constraint firstItem="5aN-L6-Z2c" firstAttribute="leading" secondItem="HHV-lI-jAs" secondAttribute="leading" id="mMf-Oe-Jim"/>
+                            <constraint firstItem="Wlj-hS-vCb" firstAttribute="trailing" secondItem="5aN-L6-Z2c" secondAttribute="trailing" id="nN0-sb-BHe"/>
+                            <constraint firstItem="Wlj-hS-vCb" firstAttribute="trailing" secondItem="cHN-Qz-luE" secondAttribute="trailing" id="tgb-14-WOX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="horizontalScrollViewContainer" destination="0iH-Lo-SyV" id="Az6-15-z8i"/>
+                        <outlet property="scrollView" destination="i0s-Gz-mLX" id="Bvq-vg-apn"/>
+                        <outlet property="verticalScrollViewContainer" destination="tw9-mf-794" id="z0P-Mf-Li2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03F-y9-09x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="125.89285714285714"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="DeaBlackLight">
+            <color red="0.11764705882352941" green="0.12156862745098039" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaBlackTotal">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaGreenLabels">
+            <color red="0.0" green="0.3843137254901961" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeaGreenMain">
+            <color red="0.074509803921568626" green="0.6470588235294118" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
