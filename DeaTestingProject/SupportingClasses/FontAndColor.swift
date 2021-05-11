@@ -46,3 +46,20 @@ func getDeaColor(_ color: ColorStyle, with alpha: CGFloat = 1) -> UIColor? {
 func getDeaFont(_ font: FontStyle, size: CGFloat) -> UIFont? {
     return UIFont(name: font.rawValue, size: size)
 }
+
+func getDeaLabelWith(text: String, font: FontStyle, fontSize: CGFloat, textColor: ColorStyle) -> UILabel {
+    let label = UILabel()
+    label.text = text
+    label.font = getDeaFont(font, size: fontSize)
+    label.textColor = getDeaColor(textColor)
+    return label
+}
+
+func createStackView(axis: NSLayoutConstraint.Axis, alignement: UIStackView.Alignment, distribution: UIStackView.Distribution, spacing: CGFloat) -> UIStackView {
+    let stackView = UIStackView()
+    stackView.axis = axis
+    stackView.distribution = distribution
+    stackView.alignment = alignement
+    stackView.spacing = spacing
+    return stackView
+}

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B44A2796264A73B300CA52B3 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A2795264A73B300CA52B3 /* Dashboard.swift */; };
-		B44A2798264A73C900CA52B3 /* Dashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44A2797264A73C900CA52B3 /* Dashboard.xib */; };
-		B4C5C8F1264989D200D22C0A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */; };
+		B44A2796264A73B300CA52B3 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A2795264A73B300CA52B3 /* DashboardView.swift */; };
+		B44A2798264A73C900CA52B3 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44A2797264A73C900CA52B3 /* DashboardView.xib */; };
+		B4C5C8F1264989D200D22C0A /* NewDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C8F0264989D200D22C0A /* NewDashboardVC.swift */; };
 		B4E8DF13263960BC002F6258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF12263960BC002F6258 /* AppDelegate.swift */; };
 		B4E8DF15263960BC002F6258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF14263960BC002F6258 /* SceneDelegate.swift */; };
 		B4E8DF17263960BC002F6258 /* AddOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8DF16263960BC002F6258 /* AddOnViewController.swift */; };
@@ -41,9 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B44A2795264A73B300CA52B3 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		B44A2797264A73C900CA52B3 /* Dashboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Dashboard.xib; sourceTree = "<group>"; };
-		B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		B44A2795264A73B300CA52B3 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B44A2797264A73C900CA52B3 /* DashboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
+		B4C5C8F0264989D200D22C0A /* NewDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDashboardVC.swift; sourceTree = "<group>"; };
 		B4E8DF0F263960BC002F6258 /* DeaTestingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeaTestingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E8DF12263960BC002F6258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E8DF14263960BC002F6258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		B44A2794264A6F9A00CA52B3 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				B44A2795264A73B300CA52B3 /* Dashboard.swift */,
-				B44A2797264A73C900CA52B3 /* Dashboard.xib */,
+				B44A2795264A73B300CA52B3 /* DashboardView.swift */,
+				B44A2797264A73C900CA52B3 /* DashboardView.xib */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E8DF16263960BC002F6258 /* AddOnViewController.swift */,
-				B4C5C8F0264989D200D22C0A /* DashboardViewController.swift */,
+				B4C5C8F0264989D200D22C0A /* NewDashboardVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 				B4E8DF3A26396207002F6258 /* NunitoSans-BoldItalic.ttf in Resources */,
 				B4E8DF4426396207002F6258 /* NunitoSans-Regular.ttf in Resources */,
 				B4E8DF3E26396207002F6258 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
-				B44A2798264A73C900CA52B3 /* Dashboard.xib in Resources */,
+				B44A2798264A73C900CA52B3 /* DashboardView.xib in Resources */,
 				B4E8DF4526396207002F6258 /* NunitoSans-Bold.ttf in Resources */,
 				B4E8DF4326396207002F6258 /* NunitoSans-LightItalic.ttf in Resources */,
 				B4E8DF4026396207002F6258 /* NunitoSans-BlackItalic.ttf in Resources */,
@@ -303,8 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4FF447F263AF2F700AF61B1 /* AddOnCell.swift in Sources */,
-				B4C5C8F1264989D200D22C0A /* DashboardViewController.swift in Sources */,
-				B44A2796264A73B300CA52B3 /* Dashboard.swift in Sources */,
+				B4C5C8F1264989D200D22C0A /* NewDashboardVC.swift in Sources */,
+				B44A2796264A73B300CA52B3 /* DashboardView.swift in Sources */,
 				B4E8DF61263999AF002F6258 /* AddOnMiddleCardView.swift in Sources */,
 				B4E8DF17263960BC002F6258 /* AddOnViewController.swift in Sources */,
 				B4E8DF13263960BC002F6258 /* AppDelegate.swift in Sources */,
